@@ -20,5 +20,5 @@ npm run package-linux
 npm run package-win
 # package mac
 npm run package-mac
-# release location is at release-builds
+# release location is at release-builds/<platform>
 ```

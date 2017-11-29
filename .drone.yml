@@ -3,7 +3,6 @@ pipeline:
     image: node:alpine
     commands:
       - echo hi electron-tutorial app
-      - echo ${GITHUB_TOKEN}
   build:
     image: node:alpine
     commands:
@@ -11,6 +10,6 @@ pipeline:
       - npm run package-linux
   github_release:
     image: plugins/drone-github-release
-    api_key: ${GITHUB_TOKEN}
+    secrets: [ github_token ]
     files: release-builds/*
     checksum: sha256

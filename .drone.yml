@@ -9,9 +9,8 @@ pipeline:
     commands:
       - npm install
       - npm run package-linux
-
-publish:
   github_release:
+    image: plugins/drone-github-release
     api_key: ${GITHUB_TOKEN}
     files:
       - release-builds/*

@@ -1,4 +1,8 @@
 pipeline:
+  test:
+    image: node:alpine
+    commands:
+      - echo hi
   build:
     image: node:alpine
     commands:

@@ -2,7 +2,7 @@ pipeline:
   test:
     image: node:alpine
     commands:
-      - echo hi
+      - echo hi electron-tutorial app
   build:
     image: node:alpine
     commands:

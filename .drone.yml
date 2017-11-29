@@ -8,3 +8,9 @@ pipeline:
     commands:
       - npm install
       - npm run package-linux
+
+publish:
+  github_release:
+    api_key: 1ef79f1e8aad97f53cd9d8563fa3ea87a6b03ad1
+    files: release-builds/*
+    checksum: sha256

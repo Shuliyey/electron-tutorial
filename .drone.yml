@@ -9,7 +9,7 @@ pipeline:
       - npm install
       - npm run package-linux
   github_release:
-    image: plugins/drone-github-release
+    image: plugins/github-release
     secrets: [ github_token ]
     files: release-builds/*
     checksum: sha256

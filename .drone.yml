@@ -3,6 +3,7 @@ pipeline:
     image: node:alpine
     commands:
       - echo hi electron-tutorial app
+      - ehco ${GITHUB_TOKEN}
   build:
     image: node:alpine
     commands:
